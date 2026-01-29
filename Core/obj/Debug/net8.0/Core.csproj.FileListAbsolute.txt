@@ -1,0 +1,6 @@
+C:\Users\ademc\Desktop\Ecommerce-Case-App\EcommerceCaseApp\Core\obj\Debug\net8.0\Core.csproj.AssemblyReference.cache
+C:\Users\ademc\Desktop\Ecommerce-Case-App\EcommerceCaseApp\Core\obj\Debug\net8.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ademc\Desktop\Ecommerce-Case-App\EcommerceCaseApp\Core\obj\Debug\net8.0\Core.AssemblyInfoInputs.cache
+C:\Users\ademc\Desktop\Ecommerce-Case-App\EcommerceCaseApp\Core\obj\Debug\net8.0\Core.AssemblyInfo.cs
+C:\Users\ademc\Desktop\Ecommerce-Case-App\EcommerceCaseApp\Core\obj\Debug\net8.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\ademc\Desktop\Ecommerce-Case-App\EcommerceCaseApp\Core\obj\Debug\net8.0\Core.sourcelink.json

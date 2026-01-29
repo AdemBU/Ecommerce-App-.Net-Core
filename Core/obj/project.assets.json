@@ -198,19 +198,6 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
-      },
-      "Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.23"
-        },
-        "compile": {
-          "bin/placeholder/Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Core.dll": {}
-        }
       }
     }
   },
@@ -566,16 +553,11 @@
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "Core/1.0.0": {
-      "type": "project",
-      "path": "../Core/Core.csproj",
-      "msbuildProject": "../Core/Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Core >= 1.0.0"
+      "Microsoft.EntityFrameworkCore >= 8.0.23"
     ]
   },
   "packageFolders": {
@@ -585,11 +567,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ademc\\Desktop\\Ecommerce-Case-App\\EcommerceCaseApp\\Entities\\Entities.csproj",
-      "projectName": "Entities",
-      "projectPath": "C:\\Users\\ademc\\Desktop\\Ecommerce-Case-App\\EcommerceCaseApp\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\ademc\\Desktop\\Ecommerce-Case-App\\EcommerceCaseApp\\Core\\Core.csproj",
+      "projectName": "Core",
+      "projectPath": "C:\\Users\\ademc\\Desktop\\Ecommerce-Case-App\\EcommerceCaseApp\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\ademc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ademc\\Desktop\\Ecommerce-Case-App\\EcommerceCaseApp\\Entities\\obj\\",
+      "outputPath": "C:\\Users\\ademc\\Desktop\\Ecommerce-Case-App\\EcommerceCaseApp\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -610,11 +592,7 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {
-            "C:\\Users\\ademc\\Desktop\\Ecommerce-Case-App\\EcommerceCaseApp\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\ademc\\Desktop\\Ecommerce-Case-App\\EcommerceCaseApp\\Core\\Core.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -631,6 +609,12 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[8.0.23, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
