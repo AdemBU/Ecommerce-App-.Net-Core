@@ -1,9 +1,11 @@
 ﻿using Business.Abstract;
 using Entities.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebUI.Controllers
 {
+    [Authorize]
     public class ProductController : Controller
     {
         private readonly IProductService _productService;

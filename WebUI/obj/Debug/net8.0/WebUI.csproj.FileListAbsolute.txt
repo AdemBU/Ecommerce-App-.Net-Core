@@ -258,3 +258,4 @@ C:\Users\ademc\Desktop\Ecommerce-Case-App\EcommerceCaseApp\WebUI\obj\Debug\net8.
 C:\Users\ademc\Desktop\Ecommerce-Case-App\EcommerceCaseApp\WebUI\obj\Debug\net8.0\WebUI.pdb
 C:\Users\ademc\Desktop\Ecommerce-Case-App\EcommerceCaseApp\WebUI\obj\Debug\net8.0\WebUI.genruntimeconfig.cache
 C:\Users\ademc\Desktop\Ecommerce-Case-App\EcommerceCaseApp\WebUI\obj\Debug\net8.0\ref\WebUI.dll
+C:\Users\ademc\Desktop\Ecommerce-Case-App\EcommerceCaseApp\WebUI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
