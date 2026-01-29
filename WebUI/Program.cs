@@ -16,6 +16,8 @@ builder.Services.AddScoped<IProductDal, EfProductDal>();
 builder.Services.AddScoped<ITokenService, TokenManager>();
 builder.Services.AddScoped<IOrderService, OrderManager>();
 builder.Services.AddScoped<IOrderDal, EfOrderDal>();
+builder.Services.AddScoped<IUserService, UserManager>();
+builder.Services.AddScoped<IUserDal, EfUserDal>();
 
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

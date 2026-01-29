@@ -7,10 +7,12 @@ namespace WebUI.Controllers
     public class AuthController : Controller
     {
         private readonly ITokenService _tokenService;
+        private readonly IUserService _userService;
 
-        public AuthController(ITokenService tokenService)
+        public AuthController(ITokenService tokenService, IUserService userService)
         {
             _tokenService = tokenService;
+            _userService = userService;
         }
 
         [HttpGet]
@@ -19,20 +21,13 @@ namespace WebUI.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
-            if (!ModelState.IsValid) return View(model);
+            // Veritabanından kullanıcıyı sorgula
+            var user = await _userService.Authenticate(model.Username, model.Password);
 
-            if (model.Username == "admin" && model.Password == "1234")
+            if (user != null)
             {
-                var token = await _tokenService.CreateTokenAsync(model.Username);
-
-                Response.Cookies.Append("jwt", token, new CookieOptions
-                {
-                    HttpOnly = true,
-                    Secure = true,
-                    SameSite = SameSiteMode.Strict,
-                    Expires = DateTime.UtcNow.AddHours(1)
-                });
-
+                var token = await _tokenService.CreateTokenAsync(user.UserName);
+                Response.Cookies.Append("jwt", token, new CookieOptions { HttpOnly = true });
                 return RedirectToAction("Index", "Product");
             }
 

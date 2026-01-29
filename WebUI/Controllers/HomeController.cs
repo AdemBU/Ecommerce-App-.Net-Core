@@ -1,5 +1,6 @@
 using Business.Abstract;
 using Entities.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using WebUI.Models;
@@ -26,17 +27,20 @@ namespace WebUI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateOrder(int productId, string customerName)
+        [Authorize]
+        public async Task<IActionResult> CreateOrder(int productId)
         {
+            var currentUserName = User.Identity?.Name;
+
             var product = await _productService.GetProductByIdAsync(productId);
             if (product == null) return NotFound();
 
             var newOrder = new Order
             {
                 OrderDate = DateTime.Now,
-                UserName = string.IsNullOrEmpty(customerName) ? "Hýzlý Müþteri" : customerName,
+                UserName = currentUserName,
                 TotalPrice = product.Price,
-                OrderDetails = $"{product.ProductName} ürününden 1 adet sipariþ verildi."
+                OrderDetails = $"{product.ProductName} ürünü {currentUserName} tarafýndan satýn alýndý."
             };
 
             await _orderService.AddOrderAsync(newOrder);
