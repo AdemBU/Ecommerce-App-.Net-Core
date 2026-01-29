@@ -1,0 +1,43 @@
+﻿@model Product
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h4>Yeni Ürün Ekle</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-6">
+                <form asp-action="Create">
+                    <div class="mb-3">
+                        <label class="form-label">Ürün Adı</label>
+                        <input asp-for="ProductName" class="form-control" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Açıklama</label>
+                        <textarea asp-for="Description" class="form-control"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Fiyat</label>
+                            <input asp-for="Price" type="number" step="0.01" class="form-control" />
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Stok</label>
+                            <input asp-for="UnitsInStock" type="number" class="form-control" />
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success">Kaydet</button>
+                    <a asp-action="Index" class="btn btn-secondary">İptal</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
