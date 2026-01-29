@@ -9,3 +9,8 @@ C:\Users\ademc\Desktop\Ecommerce-Case-App\EcommerceCaseApp\Entities\obj\Debug\ne
 C:\Users\ademc\Desktop\Ecommerce-Case-App\EcommerceCaseApp\Entities\obj\Debug\net8.0\refint\Entities.dll
 C:\Users\ademc\Desktop\Ecommerce-Case-App\EcommerceCaseApp\Entities\obj\Debug\net8.0\Entities.pdb
 C:\Users\ademc\Desktop\Ecommerce-Case-App\EcommerceCaseApp\Entities\obj\Debug\net8.0\ref\Entities.dll
+C:\Users\ademc\Desktop\Ecommerce-Case-App\EcommerceCaseApp\Entities\bin\Debug\net8.0\Core.dll
+C:\Users\ademc\Desktop\Ecommerce-Case-App\EcommerceCaseApp\Entities\bin\Debug\net8.0\Core.pdb
+C:\Users\ademc\Desktop\Ecommerce-Case-App\EcommerceCaseApp\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache
+C:\Users\ademc\Desktop\Ecommerce-Case-App\EcommerceCaseApp\Entities\obj\Debug\net8.0\Entities.sourcelink.json
+C:\Users\ademc\Desktop\Ecommerce-Case-App\EcommerceCaseApp\Entities\obj\Debug\net8.0\Entities.csproj.Up2Date

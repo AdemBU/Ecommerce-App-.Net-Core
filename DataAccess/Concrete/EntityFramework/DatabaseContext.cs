@@ -12,7 +12,7 @@ namespace DataAccess.Concrete.EntityFramework
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            base.OnConfiguring(optionsBuilder);
+            optionsBuilder.UseSqlServer(@"Server=ADEM;Database=EcommerceAppDb;Trusted_Connection=true;TrustServerCertificate=True;");
         }
 
         public DbSet<Product> Products { get; set; }
